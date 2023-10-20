@@ -38,14 +38,14 @@ def main():
     if type=="CSV":
 
         st.sidebar.header("Charger un fichier CSV🗓️")
-        uploaded_file = st.sidebar.file_uploader("Sélectionnez un fichier Excel", type=["csv"])
+        uploaded_file = st.sidebar.file_uploader("Sélectionnez un fichier csv", type=["csv"])
 
         if uploaded_file is not None:
             
             try:
                 df = pd.read_csv(uploaded_file) #A personnaliser si votre fichier csv contient des spécifités
             except Exception as e:
-                st.sidebar.error(f"Erreur lors du chargement du fichier Excel ❌ : {str(e)}")
+                st.sidebar.error(f"Erreur lors du chargement du fichier csv ❌ : {str(e)}")
                 df = None
 
             if df is not None:
