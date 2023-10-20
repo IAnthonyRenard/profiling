@@ -1,1 +1,1 @@
-streamlit-pandas-profiling
+streamlit_pandas_profiling
