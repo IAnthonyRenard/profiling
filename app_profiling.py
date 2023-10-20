@@ -6,7 +6,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 def main():
 
-    st.title("Analyse exploratoire automatisé de ton fichier 🗓️")
+    st.title("Analyse exploratoire automatisée de ton fichier 🗓️")
     st.subheader("Auteur : Anthony RENARD 🦊")
 
 
