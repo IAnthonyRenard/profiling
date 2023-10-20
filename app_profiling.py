@@ -32,7 +32,7 @@ def main():
 
                 
                 st.header("Voici une analyse du contenu de ton fichier Excel 📊")
-                pr = df.profile_report()
+                pr = df.profile_report(explorative=True)
                 st_profile_report(pr)
 
     if type=="CSV":
@@ -55,7 +55,7 @@ def main():
 
                 
                 st.header("Voici une analyse du contenu de ton fichier Excel 📊")
-                pr = df.profile_report()
+                pr = df.profile_report(explorative=True)
                 st_profile_report(pr)
     
 if __name__=='__main__':
