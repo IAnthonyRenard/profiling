@@ -1,6 +1,7 @@
-import streamlit as st
 import pandas as pd
-import pandas_profiling 
+import pandas_profiling
+import streamlit as st
+
 from streamlit_pandas_profiling import st_profile_report
 
 def main():
@@ -32,8 +33,7 @@ def main():
                 
                 st.header("Voici une analyse du contenu de ton fichier Excel 📊")
                 pr = df.profile_report()
-                profile = ProfileReport(pr, explorative=True)
-                st_profile_report(profile)
+                st_profile_report(pr)
 
     if type=="CSV":
 
@@ -56,8 +56,7 @@ def main():
                 
                 st.header("Voici une analyse du contenu de ton fichier Excel 📊")
                 pr = df.profile_report()
-                profile = ProfileReport(pr, explorative=True)
-                st_profile_report(profile)
+                st_profile_report(pr)
     
 if __name__=='__main__':
         main()
