@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
+import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 def main():
 
-    st.title("Analyse exploratoire simplifiée de ton fichier 🗓️")
+    st.title("Analyse exploratoire automatisé de ton fichier 🗓️")
     st.subheader("Auteur : Anthony RENARD 🦊")
 
 
